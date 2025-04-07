@@ -3,6 +3,7 @@ body {
     font-family: 'Caveat', cursive;
     color: #800080;
     text-align: center;
+    margin: 0; /* Убираем отступы по умолчанию */
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Делаем контейнер более адаптивным */
     margin: 0 auto;
     padding: 20px;
 }
@@ -22,19 +23,8 @@ h1 {
 }
 
 .snake-container img {
-    max-width: 300px;
+    max-width: 90%; /* Делаем рисунок адаптивным */
     height: auto;
-}
-
-.message-button {
-    background-color: #9370DB;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
 }
 
 .typing-text {
