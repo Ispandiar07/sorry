@@ -1,13 +1,14 @@
-const letterText = document.querySelector('.letter-container');
-letterText.style.opacity = 0;
-let opacity = 0;
+const letter = "Моя самая искренняя и любимая,\nЯ пишу тебе это письмо, потому что мне нужно извиниться. Я понимаю, что мои неосознанные действия причинили тебе боль, и мне искренне жаль. Я никогда не хотел этого.\nЯ хочу, чтобы ты знала, как сильно я тебя люблю и обожаю. Ты – удивительная девушка, и я ценю твою искренность больше всего на свете.\nЯ помню наши прогулки по парку, как мы смеялись над забавными надписями на табличках. Эти моменты навсегда останутся в моём сердце. Я скучаю по нашим разговорам, по твоей улыбке, по всему, что связано с тобой.\nСейчас я чувствую вину, боль и тоску. Я не могу представить свою жизнь без тебя. Я хочу всё исправить и поговорить с тобой. Давай найдём время, чтобы обсудить всё спокойно, как мы это делали раньше, гуляя по парку.\nЯ верю, что мы сможем преодолеть эту трудность. Я очень надеюсь, что ты дашь мне шанс.\nС любовью твой придурок.";
 
-function fadeIn() {
-    opacity += 0.01;
-    letterText.style.opacity = opacity;
-    if (opacity < 1) {
-        requestAnimationFrame(fadeIn);
+const letterElement = document.getElementById('letter');
+let charIndex = 0;
+
+function typeWriter() {
+    if (charIndex < letter.length) {
+        letterElement.textContent += letter.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 50); // Скорость печати (50 мс)
     }
 }
 
-fadeIn();
+typeWriter();
