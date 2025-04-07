@@ -16,13 +16,14 @@ h1 {
     padding: 20px;
 }
 
-.gif-container {
+.snake-container {
     margin-top: 20px;
+    text-align: center;
 }
 
-.gif-container img {
-    max-width: 200px;
-    margin: 10px;
+.snake-container img {
+    max-width: 300px;
+    height: auto;
 }
 
 .message-button {
@@ -34,4 +35,12 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #9370DB;
+    width: 0;
+    display: inline-block;
 }
