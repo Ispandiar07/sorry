@@ -3,7 +3,7 @@ let textIndex = 0;
 
 function typeWriter(element, text, i, delay) {
     if (i < text.length) {
-        element.textContent = text.substring(0, i + 1);
+        element.innerHTML = text.substring(0, i + 1); // Исправлено здесь
         setTimeout(() => typeWriter(element, text, i + 1, delay), delay);
     } else if (textIndex < textElements.length - 1) {
         textIndex++;
