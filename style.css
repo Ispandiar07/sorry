@@ -1,36 +1,21 @@
 body {
-    background-color: #F0E6F9;
-    font-family: sans-serif; /* Изменили шрифт на стандартный */
-    color: #800080;
-    text-align: center;
+    background-color: #fce4ec; /* Светло-розовый фон */
+    font-family: 'Dancing Script', cursive; /* Рукописный шрифт */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-}
-
-h1 {
-    font-family: serif; /* Изменили шрифт на стандартный */
-    color: #9370DB;
+    color: #333; /* Цвет текста */
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.snake-container {
-    margin-top: 20px;
     text-align: center;
+    padding: 20px;
+    max-width: 600px; /* Ограничение ширины для удобства чтения */
 }
 
-.snake-container img {
-    max-width: 90%;
-    height: auto;
-}
-
-.typing-text {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid #9370DB;
-    width: 0;
-    display: inline-block;
+.letter-container {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
