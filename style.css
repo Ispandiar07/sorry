@@ -1,18 +1,18 @@
 body {
     background-color: #F0E6F9;
-    font-family: 'Caveat', cursive;
+    font-family: sans-serif; /* Изменили шрифт на стандартный */
     color: #800080;
     text-align: center;
-    margin: 0; /* Убираем отступы по умолчанию */
+    margin: 0;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: serif; /* Изменили шрифт на стандартный */
     color: #9370DB;
 }
 
 .container {
-    width: 90%; /* Делаем контейнер более адаптивным */
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 
 .snake-container img {
-    max-width: 90%; /* Делаем рисунок адаптивным */
+    max-width: 90%;
     height: auto;
 }
 
